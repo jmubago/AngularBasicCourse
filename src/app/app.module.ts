@@ -10,7 +10,6 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +24,6 @@ import { DetailsComponent } from './details/details.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
