@@ -19,4 +19,8 @@ export class DataService {
   getPosts() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts')
   }
+
+  getComment(postId){
+    return this.http.get('https://jsonplaceholder.typicode.com/comments?postId=' + postId)
+  }
 }
