@@ -1,10 +1,18 @@
 <div id="content">
   <h1>Posts</h1>
-    <ul>
-      <li *ngFor="let post of posts$">
-        <a routerLink="">{{post.title}}</a>
-        <p>{{post.body}}</p>
-      </li>
-    </ul>
-
+  <ul>
+    <li *ngFor="let post of posts$">
+      <a (click)="postDetailId(post.id)">{{post.title}}</a>
+      <p>{{post.body}}</p>
+      <div *ngFor="let comments of postComments">
+        <div id="comments" *ngIf="post.id === comments.postId">
+          <ul>
+            <li>{{comments.name}}</li>
+            <li>{{comments.email}}</li>
+            <li>{{comments.body}}</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>

@@ -1,0 +1,18 @@
+#comments {
+    display: grid;
+    // grid-template-columns: 70px auto;
+    height: 100%;
+    padding: 30px 50px;
+
+        ul {
+            list-style-type: none;
+            background-color: red;
+        
+            li {
+                // background: red;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 12px;
+            }
+        }
+ }
