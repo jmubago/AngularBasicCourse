@@ -1,18 +1,62 @@
-#comments {
-    display: grid;
-    // grid-template-columns: 70px auto;
-    height: 100%;
+#content {
     padding: 30px 50px;
 
-        ul {
+    ul {
+        list-style-type: none;
+        margin:0;padding:0;
+    
+        li {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 8px;
+    
+            a {
+                font-size: 1.5em;
+                text-decoration: none;
+                font-weight: bold;
+                color:#00A8FF;
+            }
+    
+            ul {
+                margin-top: 20px;
+                
+                li {
+                    padding:0;
+    
+                    a {
+                        font-size: 1em;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+ }
+
+
+#comments {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(233, 228, 228);
+    height: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+        .comments-ul {
             list-style-type: none;
-            background-color: red;
+            background: transparent;
         
-            li {
-                // background: red;
-                border-radius: 8px;
-                padding: 20px;
+            .comments-li {
+                background: transparent;
                 margin-bottom: 12px;
+            }
+
+            .comments-li-body {
+                background: transparent;
+                margin-bottom: 12px;
+                padding: 0px 40px;
             }
         }
  }
