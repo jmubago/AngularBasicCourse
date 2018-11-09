@@ -23,4 +23,8 @@ export class DataService {
   getComment(postId){
     return this.http.get('https://jsonplaceholder.typicode.com/comments?postId=' + postId)
   }
+
+  getAlbums(){
+    return this.http.get('https://jsonplaceholder.typicode.com/albums');
+  }
 }
