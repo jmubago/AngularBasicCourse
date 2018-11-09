@@ -6,4 +6,10 @@
     <li><strong>Email: </strong> {{ user$.email }}</li>
     <li><strong>Phone: </strong> {{ user$.phone }}</li>
   </ul>
+
+  <div>
+    <button class="button button" (click)="showUserAlbums()">album</button>
+  </div>
+
+  <app-albums *ngIf="showUser" [userId]="user$"></app-albums>
 </div>
