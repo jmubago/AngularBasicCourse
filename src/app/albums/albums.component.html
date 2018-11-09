@@ -1,0 +1,18 @@
+<div *ngFor="let album of album">
+  <div class="display-album" *ngIf="album.userId === userId.id">
+    <div class="album">
+      <div>
+        <img src="../../assets/no-image-icon-23492.png" alt="imagen">
+      </div>
+      <div>
+        <strong>Album title: </strong>
+      </div>
+      <div>
+        {{ album.title }}
+      </div>
+      <div>
+        <button class="button button">Photos</button>
+      </div>
+    </div>
+  </div>
+</div>
