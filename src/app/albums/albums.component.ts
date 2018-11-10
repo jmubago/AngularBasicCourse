@@ -9,21 +9,15 @@ import { DataService } from '../data.service';
 })
 export class AlbumsComponent implements OnInit {
 
-  album: any;
+  album: {};
 
   @Input() userId: any;
 
-  constructor(private data: DataService) { }
+  constructor(private data: DataService) {}
 
   ngOnInit() {
     this.data.getAlbums().subscribe(
       data => this.album = data
     )
-    this.fetchUserAlbum();
   }
-
-  private fetchUserAlbum() {
-    console.log(this.userId);
-  }
-
 }
