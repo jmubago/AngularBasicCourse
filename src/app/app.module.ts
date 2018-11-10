@@ -9,6 +9,7 @@ import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { PhotosComponent } from './photos/photos.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AlbumsComponent } from './albums/albums.component';
     PostsComponent,
     UsersComponent,
     DetailsComponent,
-    AlbumsComponent
+    AlbumsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
