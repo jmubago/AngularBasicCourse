@@ -34,6 +34,10 @@
         }
     }
 
+    .button-group{
+        margin-bottom: 20px;
+    }
+
     .button {
         margin-top: 10px;
         background-color: white; 
@@ -48,5 +52,18 @@
     .button:hover {
         background-color: #008CBA;
         color: white;
+
+        a{
+            color: white;
+        }
+    }
+
+    .button1{
+        float: right;
+
+        a {
+            text-decoration: none;
+            color:#008CBA;
+        }
     }
  }
