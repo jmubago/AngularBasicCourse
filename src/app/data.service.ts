@@ -27,4 +27,8 @@ export class DataService {
   getAlbums(){
     return this.http.get('https://jsonplaceholder.typicode.com/albums');
   }
+
+  getphotos(albumId){
+    return this.http.get('https://jsonplaceholder.typicode.com/photos/?albumId=' + albumId);
+  }
 }
